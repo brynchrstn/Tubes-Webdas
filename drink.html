@@ -132,18 +132,14 @@
       bottom: 12px;
       transform: translateX(-50%);
       width: 80%;
+      border: 1px solid #ffc107;
+      transition: background 0.2s, color 0.2s;
     }
 
     .btn-below:hover {
       background: rgba(0, 0, 0, 0.8);
     }
-    .btn-outline-warning.btn-below:hover,
-    .btn-outline-warning.btn-below:focus {
-      background-color: #ffc107;
-      color: #fff;
-      border-color: #ffc107;
-      text-decoration: none;
-    }
+
     .tips-box {
       background: #e3f7f7;
       padding: 18px 20px;
@@ -174,6 +170,13 @@
     .navbar-brand {
       color: rgb(0, 140, 255);
     }
+    .btn-outline-warning.btn-below:hover,
+    .btn-outline-warning.btn-below:focus {
+      background-color: #ffc107 !important;
+      color: #fff !important;
+      border-color: #ffc107 !important;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -189,8 +192,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Food</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="sosis.html">Wurst</a></li>
-              <li><a class="dropdown-item" href="schnitzel.html">Schnitzel</a></li>
+              <li><a class="dropdown-item" href="Sosis.html">Wurst</a></li>
+              <li><a class="dropdown-item" href="Schnitzel.html">Schnitzel</a></li>
               <li><a class="dropdown-item" href="#">Brot</a></li>
             </ul>
           </li>
@@ -202,59 +205,60 @@
     </div>
   </nav>
 
-  <img src="img/BgSosis.jpg" alt="Sosis Jerman" class="hero-image w-100">
+  <img src="img/AsepBalap.jpg" alt="Sosis Jerman" class="hero-image w-100">
 
   <div class="content container">
-    <h1 class="section-title">Sosis Terkenal di Jerman</h1>
+    <h1 class="section-title">Minuman Terkenal di Jerman</h1>
     <p class="text-center mb-4">
-      Sosis adalah salah satu ikon kuliner Jerman yang mendunia. Negara ini memiliki lebih dari <b>1.500 jenis sosis</b> dengan rasa, bentuk, dan cara penyajian yang unik di setiap daerah.<br>Berikut beberapa sosis paling populer:
+      Jerman tidak hanya terkenal karena makanannya, tapi juga memiliki berbagai <b>minuman khas</b> yang unik dan beragam. Mulai dari bir klasik hingga minuman non-alkohol tradisional yang menyegarkan
     </p>
     <ul class="sosis-list">
-      <li><strong>Bratwurst</strong> - Sosis panggang khas Nürnberg, gurih dan juicy.</li>
-      <li><strong>Currywurst</strong> - Street food favorit, disajikan dengan saus kari tomat pedas.</li>
-      <li><strong>Weisswurst</strong> - Sosis putih dari Bavaria, nikmat disantap hangat dengan pretzel dan mustard manis.</li>
-      <li><strong>Bockwurst</strong> - Sosis rebus yang lembut, sering disantap bersama roti dan bir.</li>
+     <li><strong>Weißbier</strong> - Bir gandum khas Bavaria dengan rasa ringan dan sedikit manis.</li>
+      <li><strong>Glühwein</strong> - Minuman anggur hangat yang dibumbui, populer saat musim dingin dan pasar Natal.</li>
+      <li><strong>Apfelschorle</strong> - Campuran jus apel dan air soda, segar dan populer sebagai minuman sehari-hari.</li>
+      <li><strong>Schorle anggur</strong> - Anggur putih dicampur dengan air soda, menjadi minuman ringan yang menyegarkan.</li>
     </ul>
     
     <div class="fun-fact">
-      <b>Fun Fact:</b> Orang Jerman rata-rata mengonsumsi lebih dari <b>60 kg sosis per tahun</b>. Bahkan, di Berlin ada museum khusus Currywurst!
+       <b>Fun Fact:</b> Jerman memiliki lebih dari <b>1.300 pabrik bir</b> dan lebih dari 5.000 merek bir yang berbeda. Negara ini juga menjadi tuan rumah <b>Oktoberfest</b>, festival bir terbesar di dunia!
     </div>
 
-    <img src="img/BgSosis1.webp" alt="Currywurst" class="img-sosis">
+    <img src="img/BudiOliSamping.jpeg" alt="Currywurst" class="img-sosis">
 
-    <h2 class="gallery-title">Galeri Sosis Jerman</h2>
+    <h2 class="gallery-title">Galeri Beer Jerman</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="img/Bratwurst.jpg" alt="Bratwurst">
-        <a href="MenuSosis.html#bratwurst" class="btn btn-outline-warning btn-below">Explore</a>
+        <img src="img/Apfelschorle.jpg" alt="Apfelschorle">
+        <a href="MenuBeer.html#Apfelschorle" class="btn btn-outline-warning btn-below">Explore</a>
       </div>
       <div class="gallery-item">
-        <img src="img/Currywurst.jpg" alt="Currywurst.jpg">
-        <a href="MenuSosis.html#currywurst" class="btn btn-outline-warning btn-below">Explore</a>
+        <img src="img/Beer.jpg" alt="Beer.jpg">
+        <a href="MenuBeer.html#Beer" class="btn btn-outline-warning btn-below">Explore</a>
       </div>
       <div class="gallery-item">
-        <img src="img/weisswurst.jpg" alt="weisswurst">
-        <a href="MenuSosis.html#weisswurst" class="btn btn-outline-warning btn-below">Explore</a>
+        <img src="img/Radler.jpg" alt="Radler">
+        <a href="MenuBeer.html#Radler" class="btn btn-outline-warning btn-below">Explore</a>
       </div>
       <div class="gallery-item">
-        <img src="img/Bockwurst.jpg" alt="bockwrust">
-        <a href="MenuSosis.html#bockwurst" class="btn btn-outline-warning btn-below">Explore</a>
+        <img src="img/Spezi.jpg" alt="Spezi">
+        <a href="MenuBeer.html#Spezi" class="btn btn-outline-warning btn-below">Explore</a>
       </div>
     </div>
 
     <div class="tips-box">
-      <b>Tips Penyajian:</b> Sosis Jerman paling nikmat disantap dengan pretzel, sauerkraut (kubis asam), dan mustard. Untuk pengalaman otentik, coba padukan dengan bir Jerman favorit!
+      <b>Tips Menikmati:</b> Bir Jerman paling nikmat disajikan dalam gelas dingin. Untuk non-alkohol, Apfelschorle cocok diminum saat cuaca panas. Minuman seperti Glühwein lebih pas dinikmati saat musim dingin.
     </div>
 
     <p class="text-center">
-      Banyak wisatawan mencicipi berbagai jenis sosis saat berkunjung ke Jerman, terutama saat festival makanan seperti <b>Oktoberfest</b>. Nikmati kelezatan sosis langsung dari negara asalnya!
+      Jika kamu berkesempatan berkunjung ke Jerman, cobalah berbagai jenis minumannya! Dari festival bir hingga kafe kecil, semuanya menawarkan pengalaman rasa yang otentik dan khas.
     </p>
   </div>
 
   <div class="footer">
-    <a href="#" class="back-to-top">↑ Back to top</a>
     <p>Copyright by ©gutes Essen 2025. All rights reserved.</p>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     // Highlight gallery-item on click with warning color
     document.querySelectorAll('.gallery-item').forEach(function(item) {
