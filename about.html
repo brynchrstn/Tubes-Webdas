@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #fffefa;
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .navbar-brand {
+      color: rgb(0, 140, 255);
+      font-weight: bold;
+    }
+
+    .nav-link, .navbar-brand {
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .hero {
+      background: url('img/hero-sosis.jpg') no-repeat center center/cover;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-section h2 {
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .values {
+      background: #f2f2f2;
+      padding: 40px 20px;
+    }
+
+    .values h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .values-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .value-item {
+      flex: 1 1 250px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .value-item h4 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1rem;
+      margin-top: 4rem;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 8px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    .back-to-top:hover {
+      color: #fff;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+
+    .dropdown-menu {
+      display: none;
+      transition: all 0.3s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+    }
+
+    .dropdown-item {
+      color: white;
+    }
+
+    .dropdown-item:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top position-sticky navbar-dark">
+    <div class="container-fluid px-4 text-warning">
+      <a class="navbar-brand fw-bold text-warning" href="home.html">gutes Essen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Food</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sosis.html">Wurst</a></li>
+              <li><a class="dropdown-item" href="schnitzel.html">Schnitzel</a></li>
+              <li><a class="dropdown-item" href="#">Brot</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#minuman">Drink</a></li>
+          <li class="nav-item"><a class="nav-link" href="fact.html">Fact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Siapa Kami?</h1>
+  </div>
+
+  <section class="about-section">
+    <h2>Cerita Kami</h2>
+    <p>
+      Kami memulai <strong>gutes Essen</strong> dengan satu tujuan sederhana: membawa kelezatan sosis khas Jerman ke hadapan Anda. Dari jalanan Berlin yang penuh semangat hingga dapur tradisional Bavaria, kami terinspirasi oleh cita rasa yang kaya sejarah dan budaya.
+    </p>
+    <p>
+      Melalui platform ini, kami ingin lebih dari sekadar menyajikan daftar menu. Kami ingin berbagi kisah, fakta unik, dan semangat dari setiap jenis sosis yang kami tampilkan. Setiap halaman adalah hasil eksplorasi, penelitian, dan rasa cinta terhadap kuliner khas Jerman.
+    </p>
+    <p>
+      Bagi kami, makanan adalah jembatan yang menghubungkan budaya dan manusia. Kami harap Anda dapat merasakannya di setiap klik dan gigitan virtual Anda di situs ini.
+    </p>
+  </section>
+
+  <section class="values">
+    <h3>Nilai-Nilai Kami</h3>
+    <div class="values-list">
+      <div class="value-item">
+        <h4>Otentik</h4>
+        <p>Setiap cerita dan menu bersumber dari referensi budaya asli Jerman.</p>
+      </div>
+      <div class="value-item">
+        <h4>Informasi & Edukasi</h4>
+        <p>Kami ingin Anda mengenal lebih dari sekadar rasa — tapi juga sejarahnya.</p>
+      </div>
+      <div class="value-item">
+        <h4>Visual & Pengalaman</h4>
+        <p>Gambar, layout, dan bahasa kami rancang agar pengalaman Anda menyenangkan.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>© 2025 gutes Essen. All rights reserved.</p>
+    <a href="#" class="back-to-top">↑ Back to top</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
