@@ -1,6 +1,6 @@
 document.querySelectorAll('.gallery-item').forEach(function(item) {
     item.addEventListener('click', function() {
-        item.style.boxShadow = '0 0 0 4px #ffc107, 0 4px 18px rgba(0,0,0,0.15)';
+        item.style.boxShadow = '0 0 0 4px #ffc107, 0 8px 32px rgba(0,0,0,0.25)';
         setTimeout(function() {
             item.style.boxShadow = '';
         }, 500);

@@ -60,7 +60,7 @@ h2 {
     text-align: center;
 }
 footer {
-    background-color: #000;
+    background-color: #222;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -73,4 +73,13 @@ footer {
     .brot-row:nth-child(even) .brot-image {
         order: 2;
     }
+}
+.navbar-brand {
+    background: linear-gradient(90deg, #ffc107, #ff9800, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.18);
 }
