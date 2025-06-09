@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sosis Jerman</title>
+  <title>Beer Jerman</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
@@ -14,6 +14,7 @@
     }
     .navbar {
       background-color: rgba(0, 0, 0, 0.8);
+      border: none;
     }
     .nav-link, .navbar-brand {
       color: #fff;
@@ -25,29 +26,14 @@
       border-radius: 5px;
       transition: 0.3s;
     }
-    .nav-item.dropdown:hover .dropdown-menu {
-      display: block;
-      margin-top: 0;
-    }
-    .dropdown-menu {
-      display: none;
-      transition: all 0.3s ease-in-out;
-      background-color: rgba(0, 0, 0, 0.5);
-      border: none;
-    }
-    .dropdown-item {
-      color: white;
-    }
-    .dropdown-item:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-      color: white;
-    }
     .hero-image {
       width: 100%;
       max-height: 400px;
       object-fit: cover;
+      margin-top: 56px;
       filter: brightness(0.85);
       box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      animation: 1.5s;
     }
     .content {
       padding: 2rem 0;
@@ -69,11 +55,11 @@
       padding: 18px 20px;
       border-radius: 10px;
       font-style: italic;
-      margin: 2rem 0;
+      margin: 2rem 0 2rem 0;
       font-size: 1.1rem;
       box-shadow: 0 2px 10px rgba(0,0,0,0.03);
     }
-    .img-sosis {
+    .img-beer {
       width: 100%;
       max-width: 600px;
       height: auto;
@@ -83,7 +69,7 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
       transition: transform 0.3s;
     }
-    .img-sosis:hover {
+    .img-beer:hover {
       transform: scale(1.04);
     }
     .gallery-title {
@@ -100,39 +86,17 @@
       justify-content: center;
       margin-bottom: 2.5rem;
     }
-    .gallery-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-    }
-    .gallery-item img {
+    .gallery img {
       width: 170px;
       height: 120px;
       object-fit: cover;
       border-radius: 10px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     }
-    .gallery-item:hover img {
+    .gallery img:hover {
       transform: scale(1.07);
       box-shadow: 0 4px 18px rgba(0,0,0,0.15);
     }
-    .btn-below {
-      display: block;
-      margin-top: 8px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    .btn-below:hover {
-      background: rgba(0, 0, 0, 0.8);
-    }
-
     .tips-box {
       background: #e3f7f7;
       padding: 18px 20px;
@@ -160,13 +124,13 @@
       color: #fff;
       text-decoration: underline;
     }
-    .navbar-brand {
-      color: rgb(0, 140, 255);
+    .navbar-brand{
+        color: rgb(0, 140, 255);
     }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top position-sticky navbar-dark">
+  <nav class="navbar navbar-expand-lg fixed-top position-absolute navbar-dark">
     <div class="container-fluid px-4">
       <a class="navbar-brand fw-bold" href="home.html">gutes Essen</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -174,24 +138,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Drink</a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Food</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Sosis.html">Wurst</a></li>
-              <li><a class="dropdown-item" href="Schnitzel.html">Schnitzel</a></li>
-              <li><a class="dropdown-item" href="#">Brot</a></li>
+              <li><a class="dropdown-item" href="#">Sausage</a></li>
+              <li><a class="dropdown-item" href="#">Schnitzel</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#minuman">Drink</a></li>
           <li class="nav-item"><a class="nav-link" href="#fakta">Fact</a></li>
-          <li class="nav-item"><a class="nav-link" href="#kontak">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <img src="img/AsepBalap.jpg" alt="Sosis Jerman" class="hero-image w-100">
+  <img src="img/AsepBalap.jpg" alt="Beer Jerman" class="hero-image w-100">
 
   <div class="content container">
     <h1 class="section-title">Minuman Terkenal di Jerman</h1>
@@ -199,51 +161,39 @@
       Jerman tidak hanya terkenal karena makanannya, tapi juga memiliki berbagai <b>minuman khas</b> yang unik dan beragam. Mulai dari bir klasik hingga minuman non-alkohol tradisional yang menyegarkan
     </p>
     <ul class="sosis-list">
-     <li><strong>Weißbier</strong> - Bir gandum khas Bavaria dengan rasa ringan dan sedikit manis.</li>
+      <li><strong>Weißbier</strong> - Bir gandum khas Bavaria dengan rasa ringan dan sedikit manis.</li>
       <li><strong>Glühwein</strong> - Minuman anggur hangat yang dibumbui, populer saat musim dingin dan pasar Natal.</li>
       <li><strong>Apfelschorle</strong> - Campuran jus apel dan air soda, segar dan populer sebagai minuman sehari-hari.</li>
       <li><strong>Schorle anggur</strong> - Anggur putih dicampur dengan air soda, menjadi minuman ringan yang menyegarkan.</li>
     </ul>
     
     <div class="fun-fact">
-       <b>Fun Fact:</b> Jerman memiliki lebih dari <b>1.300 pabrik bir</b> dan lebih dari 5.000 merek bir yang berbeda. Negara ini juga menjadi tuan rumah <b>Oktoberfest</b>, festival bir terbesar di dunia!
+      <b>Fun Fact:</b> Jerman memiliki lebih dari <b>1.300 pabrik bir</b> dan lebih dari 5.000 merek bir yang berbeda. Negara ini juga menjadi tuan rumah <b>Oktoberfest</b>, festival bir terbesar di dunia!
     </div>
 
-    <img src="img/BudiOliSamping.jpeg" alt="Currywurst" class="img-sosis">
+    <img src="img/GermanBeer.jpeg" alt="Beer" class="img-beer">
 
     <h2 class="gallery-title">Galeri Beer Jerman</h2>
     <div class="gallery">
-      <div class="gallery-item">
-        <img src="img/Apfelschorle.jpg" alt="Apfelschorle">
-        <a href="MenuBeer.html#Apfelschorle" class="btn-below">Explore</a>
-      </div>
-      <div class="gallery-item">
-        <img src="img/Beer.jpg" alt="Beer.jpg">
-        <a href="MenuBeer.html#Beer" class="btn-below">Explore</a>
-      </div>
-      <div class="gallery-item">
-        <img src="img/Radler.jpg" alt="Radler">
-        <a href="MenuBeer.html#Radler" class="btn-below">Explore</a>
-      </div>
-      <div class="gallery-item">
-        <img src="img/Spezi.jpg" alt="Spezi">
-        <a href="MenuBeer.html#Spezi" class="btn-below">Explore</a>
-      </div>
+      <img src="img/Apfelschorle.jpg" alt="Apfelschorle">
+      <img src="img/Beer.jpg" alt="Beer">
+      <img src="img/Radler.jpg" alt="Radler">
+      <img src="img/Spezi.jpg" alt="Spezi">
     </div>
 
     <div class="tips-box">
-      <b>Tips Menikmati:</b> Bir Jerman paling nikmat disajikan dalam gelas dingin. Untuk non-alkohol, Apfelschorle cocok diminum saat cuaca panas. Minuman seperti Glühwein lebih pas dinikmati saat musim dingin.
+       <b>Tips Menikmati:</b> Bir Jerman paling nikmat disajikan dalam gelas dingin. Untuk non-alkohol, Apfelschorle cocok diminum saat cuaca panas. Minuman seperti Glühwein lebih pas dinikmati saat musim dingin.
     </div>
 
     <p class="text-center">
-      Jika kamu berkesempatan berkunjung ke Jerman, cobalah berbagai jenis minumannya! Dari festival bir hingga kafe kecil, semuanya menawarkan pengalaman rasa yang otentik dan khas.
+       Jika kamu berkesempatan berkunjung ke Jerman, cobalah berbagai jenis minumannya! Dari festival bir hingga kafe kecil, semuanya menawarkan pengalaman rasa yang otentik dan khas.
     </p>
   </div>
 
   <div class="footer">
+    <a href="#" class="back-to-top">↑ Back to top</a>
     <p>Copyright by ©gutes Essen 2025. All rights reserved.</p>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
