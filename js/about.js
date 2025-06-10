@@ -12,3 +12,19 @@ document.getElementById('showFormBtn').addEventListener('click', function () {
   this.style.display = 'none';
   formSection.scrollIntoView({ behavior: 'smooth' });
 });
+
+
+(function(){
+  emailjs.init({
+    publicKey: "_zY018WcASe2JOn4v",
+  });
+})();
+
+function sendMail(){
+  let parms = {
+    name : getElementById('name').value,
+    email : getElementById('email').value,
+    pesan : getElementById('pesan').value,
+  }
+  emailjs.send('service_stbhycw', 'template_fvbp3tm', parms).then(alert('Email Sent!'))
+}
