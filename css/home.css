@@ -64,7 +64,7 @@ body {
 }
 .carousel-caption {
     color: white;
-    background-color: rgba(0,0,0,0.5); /* Only the background is transparent */
+    background-color: rgba(0,0,0,0.5);
     margin: 0;
     z-index: 5;
     opacity: 1;
@@ -130,4 +130,13 @@ body {
     font-weight: bold;
     letter-spacing: 2px;
     text-shadow: 1px 1px 8px rgba(0,0,0,0.18);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:  1s ease-out, 1s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -113,7 +113,7 @@ body {
     margin-top: 8px;
     text-align: center;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: #ffc107;
     padding: 6px 12px;
     border-radius: 6px;
     font-size: 0.9rem;
@@ -125,14 +125,13 @@ body {
     transform: translateX(-50%);
     width: 80%;
 }
-
 .btn-below:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 .btn-outline-warning.btn-below:hover,
 .btn-outline-warning.btn-below:focus {
     background-color: #ffc107;
-    color: #fff;
+    color: black;
     border-color: #ffc107;
     text-decoration: none;
 }
@@ -171,4 +170,13 @@ body {
     font-weight: bold;
     letter-spacing: 2px;
     text-shadow: 1px 1px 8px rgba(0,0,0,0.18);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:  1s ease-out,  1s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -311,6 +311,15 @@ hr{
   height: 1px;
   margin: 2rem auto;
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:  1s ease-out,  1s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
